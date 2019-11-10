@@ -1,0 +1,33 @@
+version: '3.4'
+
+services:
+  aspnetcoreexamples.mvc:
+    image: ${DOCKER_REGISTRY-}aspnetcoreexamplesmvc
+    build:
+      context: .
+      dockerfile: AspNetCoreExamples.Mvc/Dockerfile
+
+  aspnetcoreexamples.webapi:
+    image: ${DOCKER_REGISTRY-}aspnetcoreexampleswebapi
+    build:
+      context: .
+      dockerfile: AspNetCoreExamples.WebApi/Dockerfile
+
+  nuget-server:
+    container_name: ${DOCKER_REGISTRY-}nugetserver
+    image: loicsharma/baget:latest
+    restart: always
+    environment:
+      ApiKey: "bagetsecret"
+      Storage__Type: "FileSystem"
+      Storage__Path: "/var/baget/packages"
+      Database__Type: "Sqlite"
+      Database__ConnectionString: "Data Source=/var/baget/baget.db"
+      Search__Type: "Database"
+    volumes:
+      - nugetserverdata:/var/baget
+    ports:
+      - "5300:80"
+volumes:  
+  nugetserverdata:
+    external: true
