@@ -20,6 +20,11 @@ namespace AspNetCoreExamples.Mvc
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
+                    webBuilder.ConfigureKestrel(options =>
+                    {
+                        options.Limits.MaxConcurrentConnections = 100;
+                        options.Limits.MaxRequestBodySize = 10 * 1024; // in bytes
+                    });
                     webBuilder.UseStartup<Startup>();
                 });
     }
