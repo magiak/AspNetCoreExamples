@@ -45,7 +45,7 @@ Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-co
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreExamples.Tests", "test\AspNetCoreExamples.Tests\AspNetCoreExamples.Tests.csproj", "{336E2742-98E7-4D11-9942-58CB37A6BAD1}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AspNetCore2Vs3", "AspNetCore2Vs3", "{40DDF5D5-66BF-4B51-8CEB-BE1B9FD74E76}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.AspNetCore2Vs3", "2.AspNetCore2Vs3", "{40DDF5D5-66BF-4B51-8CEB-BE1B9FD74E76}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreExamples.Version2_2", "examples\AspNetCoreExamples.Version2_2\AspNetCoreExamples.Version2_2.csproj", "{1B7BF105-22F4-4DC5-9532-250FB916D989}"
 EndProject
@@ -55,7 +55,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreExamples.ConsoleA
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreExamples.Middlewares", "examples\AspNetCoreExamples.Middlewares\AspNetCoreExamples.Middlewares.csproj", "{F35321CC-C881-4D21-9264-32EC40F8DDB2}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GenericHost", "GenericHost", "{150A7215-5659-4A34-82FD-B04C768F06D5}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.GenericHost", "1.GenericHost", "{150A7215-5659-4A34-82FD-B04C768F06D5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NginxVsIIS", "NginxVsIIS", "{3C31E770-4865-483F-94B0-F03FBE7557FA}"
 EndProject
@@ -85,7 +85,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreExamples.Dependen
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SOLID", "SOLID", "{609D99C0-DB41-46BB-ACB8-2B94C338B7BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCoreExamples.SOLID", "SOLID\AspNetCoreExamples.SOLID\AspNetCoreExamples.SOLID.csproj", "{B0E716D4-124A-455F-A54A-477E6A21A00D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreExamples.SOLID", "SOLID\AspNetCoreExamples.SOLID\AspNetCoreExamples.SOLID.csproj", "{B0E716D4-124A-455F-A54A-477E6A21A00D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docker", "Docker", "{EB0F5576-DD73-4A60-A5C7-48EAE79CC575}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreExamples.DockerConsoleApp", "examples\AspNetCoreExamples.DockerConsoleApp\AspNetCoreExamples.DockerConsoleApp.csproj", "{9404EEE2-4DD4-4971-9049-1894C870B0A2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreExamples.DockerWebApp", "examples\AspNetCoreExamples.DockerWebApp\AspNetCoreExamples.DockerWebApp.csproj", "{ACF21556-3E9A-45ED-99B1-401C381BF101}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -173,6 +179,14 @@ Global
 		{B0E716D4-124A-455F-A54A-477E6A21A00D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B0E716D4-124A-455F-A54A-477E6A21A00D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B0E716D4-124A-455F-A54A-477E6A21A00D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9404EEE2-4DD4-4971-9049-1894C870B0A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9404EEE2-4DD4-4971-9049-1894C870B0A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9404EEE2-4DD4-4971-9049-1894C870B0A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9404EEE2-4DD4-4971-9049-1894C870B0A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACF21556-3E9A-45ED-99B1-401C381BF101}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACF21556-3E9A-45ED-99B1-401C381BF101}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACF21556-3E9A-45ED-99B1-401C381BF101}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACF21556-3E9A-45ED-99B1-401C381BF101}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -208,6 +222,9 @@ Global
 		{23971A0C-44F2-4048-BD47-304F9030E4D2} = {F6AD9B9F-792E-4806-9BA7-BC83CD77CD46}
 		{955102D5-C25C-4EE2-AB2F-2C5DB3C42ACD} = {7345F879-6219-4239-A4B0-E19DCD5C23F1}
 		{B0E716D4-124A-455F-A54A-477E6A21A00D} = {609D99C0-DB41-46BB-ACB8-2B94C338B7BE}
+		{EB0F5576-DD73-4A60-A5C7-48EAE79CC575} = {946DF92B-0311-495F-BDE4-5A3D17118BED}
+		{9404EEE2-4DD4-4971-9049-1894C870B0A2} = {EB0F5576-DD73-4A60-A5C7-48EAE79CC575}
+		{ACF21556-3E9A-45ED-99B1-401C381BF101} = {EB0F5576-DD73-4A60-A5C7-48EAE79CC575}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CF4CA483-09F6-4EF4-852C-4ABEEDF77D6E}

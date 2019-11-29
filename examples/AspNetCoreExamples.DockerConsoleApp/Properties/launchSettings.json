@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "AspNetCoreExamples.DockerConsoleApp": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}
